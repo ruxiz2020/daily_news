@@ -30,6 +30,7 @@ for key in dict_all_cn_news_url.keys():
     news_requests = requests.get(dict_all_cn_news_url[key])
     df = gen_df_news_title(news_requests)
     df["type"] = key
+    df['title_content'], df['news_source'] = df['title'].str.split(' - ', 1).str
     dfs.append(df)
 
 all_df_cn_news = pd.concat(dfs)

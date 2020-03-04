@@ -24,14 +24,14 @@ dict_all_news_url = {
 
 
 dict_all_cn_news_url = {
-    "us_news": "http://newsapi.org/v2/top-headlines?country=cn&apiKey=" + api_key_newsapi,
-    "us_business_news": "http://newsapi.org/v2/top-headlines?country=cn&category=business&apiKey=" + api_key_newsapi,
-    "us_tech_news": "http://newsapi.org/v2/top-headlines?country=cn&category=technology&apiKey=" + api_key_newsapi,
-    "us_health_news": "http://newsapi.org/v2/top-headlines?country=cn&category=health&apiKey=" + api_key_newsapi,
-    "us_science_news": "http://newsapi.org/v2/top-headlines?country=cn&category=science&apiKey=" + api_key_newsapi,
-    "us_entertainment_news": "http://newsapi.org/v2/top-headlines?country=cn&category=entertainment&apiKey=" + \
+    "头条": "http://newsapi.org/v2/top-headlines?country=cn&apiKey=" + api_key_newsapi,
+    "商业": "http://newsapi.org/v2/top-headlines?country=cn&category=business&apiKey=" + api_key_newsapi,
+    "技术": "http://newsapi.org/v2/top-headlines?country=cn&category=technology&apiKey=" + api_key_newsapi,
+    "健康": "http://newsapi.org/v2/top-headlines?country=cn&category=health&apiKey=" + api_key_newsapi,
+    "科学": "http://newsapi.org/v2/top-headlines?country=cn&category=science&apiKey=" + api_key_newsapi,
+    "娱乐": "http://newsapi.org/v2/top-headlines?country=cn&category=entertainment&apiKey=" + \
                             api_key_newsapi,
-    "us_sports_news": "http://newsapi.org/v2/top-headlines?country=cn&category=sports&apiKey=" + \
+    "运动": "http://newsapi.org/v2/top-headlines?country=cn&category=sports&apiKey=" + \
                             api_key_newsapi
 }
 

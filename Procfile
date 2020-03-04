@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath apps/dash-web-trader app:server
+web: gunicorn --pythonpath apps/dash-clinical-analytics app:server

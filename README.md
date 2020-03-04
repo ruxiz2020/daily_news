@@ -1,54 +1,50 @@
-# Dash Web Trader
-This is a demo of the Dash interactive Python framework developed by [Plotly](https://plot.ly/).
+# dash-clinical-analytics
 
-This app continually queries csv files and updates Ask and Bid prices for major currency
-pairs as well as Stock Charts. You can also virtually buy and sell stocks and see the
-profit updates.
+## About this app
+
+This dashboard allows you to explore clinic patient volume by time of the day, waiting time and care score. Drill down into high-volume days to view how the busy environment may have affected patient experience.
+
+## Requirements
+
+* Python 3
 
 ## How to run this app
 
-(The following instructions apply to Windows command line.)
-
-To run this app first clone repository and then open a terminal to the app folder.
-
-```
-git clone https://github.com/plotly/dash-sample-apps.git
-cd dash-sample-apps/apps/dash-web-trader
-```
-
-Create and activate a new virtual environment (recommended) by running
-the following:
-
-On Windows
+We suggest you to create a virtual environment for running this app with Python 3. Clone this repository 
+and open your terminal/command prompt in the root folder.
 
 ```
-virtualenv venv
-\venv\scripts\activate
+git clone https://github.com/plotly/dash-sample-apps
+cd dash-sample-apps/apps/dash-clinical-analytics
+python3 -m virtualenv venv
+
+```
+In Unix system:
+```
+source venv/bin/activate
+
+```
+In Windows: 
+
+```
+venv\Scripts\activate
 ```
 
-Or if using linux
-
-```bash
-python3 -m venv myvenv
-source myvenv/bin/activate
-```
-
-Install the requirements:
-
+Install all required packages by running:
 ```
 pip install -r requirements.txt
 ```
-Run the app:
 
+Run this app locally with:
 ```
 python app.py
 ```
-You can run the app on your browser at http://127.0.0.1:8050
 
-## Screenshots
+## Screenshot
 
-![demo.png](demo.png)
+![screenshot](img/screencapture.png)
 
 ## Resources
 
-To learn more about Dash, please visit [documentation](https://plot.ly/dash).
+* [Dash](https://dash.plot.ly/)
+* Inspired by [Tableau template](https://www.tableau.com/solutions/workbook/improve-patient-satisfaction-improving-cycle-time).
