@@ -16,7 +16,7 @@ import plotly.graph_objs as go
 from dash.dependencies import Input, Output, State
 from plotly import tools
 
-from util import all_df_news
+from util import all_df_cn_news
 
 
 
@@ -37,7 +37,7 @@ def update_news():
     #json_data = news_requests.json()["articles"]
     #df = pd.DataFrame(json_data)
     #df = pd.DataFrame(df[["title", "url"]])
-    max_rows = 20
+    max_rows = 30
     return html.Div(
         children=[
             html.P(className="p-news", children="Headlines"),
@@ -55,15 +55,15 @@ def update_news():
                                 children=[
                                     html.A(
                                         className="td-link",
-                                        children=all_df_news.iloc[i]["title"],
-                                        href=all_df_news.iloc[i]["url"],
+                                        children=all_df_cn_news.iloc[i]["title"],
+                                        href=all_df_cn_news.iloc[i]["url"],
                                         target="_blank",
                                     )
                                 ]
                             )
                         ]
                     )
-                    for i in range(min(len(all_df_news), max_rows))
+                    for i in range(min(len(all_df_cn_news), max_rows))
                 ],
             ),
         ]
@@ -92,12 +92,12 @@ app.layout = html.Div(
                     className="div-info",
                     children=[
                         html.Img(
-                            className="logo", src=app.get_asset_url("hodgepodge_daily_news.png")
+                            className="logo", src=app.get_asset_url("每日新聞匯總.png")
                         ),
                         html.H6(className="title-header", children="FOREX TRADER"),
                         html.P(
                             """
-                            Hodgepodge news sources: BBC, WSJ, NYT, Yahoo, google news, baidu news, etc.
+                            每日新闻汇总: BBC, WSJ, NYT, Yahoo, google news, baidu news, etc.
                             """
                         ),
                     ],
@@ -128,4 +128,4 @@ def update_news_div(n):
 
 
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run_server(debug=True, port=8051)

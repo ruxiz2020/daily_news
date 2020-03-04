@@ -9,7 +9,7 @@ dict_all_news_url = {
     "wsj_nyt_news": "http://newsapi.org/v2/everything?domains=wsj.com,nytimes.com&apiKey=" + api_key_newsapi,
     "nyt_news": "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=" + api_key_nyt,
     "yahoo_news": "http://newsapi.org/v2/everything?domains=yahoo.com&apiKey=" + api_key_newsapi,
-    "business_news": "http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=" + api_key_newsapi,
+    "us_business_news": "http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=" + api_key_newsapi,
     "us_tech_news": "http://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=" + api_key_newsapi,
     "us_health_news": "http://newsapi.org/v2/top-headlines?country=us&category=health&apiKey=" + api_key_newsapi,
     "us_science_news": "http://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=" + api_key_newsapi,
@@ -20,4 +20,22 @@ dict_all_news_url = {
     "pet_news": "http://newsapi.org/v2/everything?q=pet&apiKey="+ api_key_newsapi,
     "dog_news": "http://newsapi.org/v2/everything?q=dog&apiKey="+ api_key_newsapi,
     "cat_news": "http://newsapi.org/v2/everything?q=cat&apiKey="+ api_key_newsapi,
+}
+
+
+dict_all_cn_news_url = {
+    "us_news": "http://newsapi.org/v2/top-headlines?country=cn&apiKey=" + api_key_newsapi,
+    "us_business_news": "http://newsapi.org/v2/top-headlines?country=cn&category=business&apiKey=" + api_key_newsapi,
+    "us_tech_news": "http://newsapi.org/v2/top-headlines?country=cn&category=technology&apiKey=" + api_key_newsapi,
+    "us_health_news": "http://newsapi.org/v2/top-headlines?country=cn&category=health&apiKey=" + api_key_newsapi,
+    "us_science_news": "http://newsapi.org/v2/top-headlines?country=cn&category=science&apiKey=" + api_key_newsapi,
+    "us_entertainment_news": "http://newsapi.org/v2/top-headlines?country=cn&category=entertainment&apiKey=" + \
+                            api_key_newsapi,
+    "us_sports_news": "http://newsapi.org/v2/top-headlines?country=cn&category=sports&apiKey=" + \
+                            api_key_newsapi
+}
+
+stock_data_url = "https://stooq.com/db/h/"
+dict_stock_data_url = {
+    "stock_data_5min_url": stock_data_url + "5_us_txt.zip"
 }
