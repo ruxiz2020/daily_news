@@ -10,7 +10,7 @@ This dashboard allows you to explore clinic patient volume by time of the day, w
 
 ## How to run this app
 
-We suggest you to create a virtual environment for running this app with Python 3. Clone this repository 
+We suggest you to create a virtual environment for running this app with Python 3. Clone this repository
 and open your terminal/command prompt in the root folder.
 
 ```
@@ -24,7 +24,7 @@ In Unix system:
 source venv/bin/activate
 
 ```
-In Windows: 
+In Windows:
 
 ```
 venv\Scripts\activate
@@ -48,3 +48,7 @@ python app.py
 
 * [Dash](https://dash.plot.ly/)
 * Inspired by [Tableau template](https://www.tableau.com/solutions/workbook/improve-patient-satisfaction-improving-cycle-time).
+
+## NLP
+Stanford NLP is used to parse Chinese sentences to get keywords
+Source [Stanford-CoreNLP-API-in-NLTK](https://github.com/nltk/nltk/wiki/Stanford-CoreNLP-API-in-NLTK)
